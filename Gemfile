@@ -45,5 +45,7 @@ group :development, :test do
   gem 'spring'
 end
 
+gem "haml-rails"
+gem "simple_form"
 
-gem 'trailblazer'
+gem "trailblazer", git: "https://github.com/apotonick/trailblazer.git"
