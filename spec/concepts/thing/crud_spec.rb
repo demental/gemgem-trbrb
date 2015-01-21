@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 describe 'ThingCrud' do
 
   describe 'Create' do
@@ -21,7 +19,7 @@ describe 'ThingCrud' do
       expect(op.contract.errors.to_s).to eq "{:name=>[\"can't be blank\"]}"
     end
     it 'too short description' do
-      res, op = Thing::Create.run(thing: {name: 'bla', description: 'foo'})
+      _, op = Thing::Create.run(thing: {name: 'bla', description: 'foo'})
       expect(op.contract.errors.to_s).to eq "{:description=>[\"is too short (minimum is 4 characters)\"]}"
     end
   end
