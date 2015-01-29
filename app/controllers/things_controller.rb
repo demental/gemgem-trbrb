@@ -1,6 +1,5 @@
 class ThingsController < ApplicationController
 
-
   def new
     form Thing::Create
   end

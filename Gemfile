@@ -50,3 +50,9 @@ gem "haml-rails"
 gem "simple_form"
 
 gem "trailblazer", git: "https://github.com/apotonick/trailblazer.git"
+
+gem 'cells', git: "https://github.com/apotonick/cells.git"
+
+
+gem 'rails-timeago'
+gem 'foundation-rails'
